@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Netflix - Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body class="bg-dark">
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img id="logo" src="./assets/netflix_logo.png" alt="Logo Netflix"
+        /></a>
+        <div
+          id="right-element"
+          class="d-flex align-items-center flex-lg-row-reverse flex-lg-grow-1 justify-content-between"
+        >
+          <div
+            class="d-flex align-items-center justify-content-lg-end gap-3 flex-lg-grow-1"
+          >
+            <div id="serch-container">
+              <i class="bi bi-search text-white"></i>
+            </div>
+
+            <span class="text-white">Kids</span>
+            <div
+              id="bell-container"
+              class="d-flex lign-items-center justify-content-center"
+            >
+              <i class="bi bi-bell-fill text-white"></i>
+            </div>
+            <div class="dropdown-toggle text-white">
+              <img
+                id="avatar"
+                class="img-fluid"
+                src="./assets/avatar.png"
+                alt="avatar"
+              />
+            </div>
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon navbar-dark"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="#">TV Shows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="#"> Movies </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="#"
+                  >Recently added</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="#">My List</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header class="my-3">
+      <div
+        id="filters"
+        class="container-fluid d-flex align-items-center justify-content-between px-4"
+      >
+        <div class="d-flex gap-3">
+          <h1 class="text-white">TV Shows</h1>
+          <div class="dropdown">
+            <a
+              class="btn btn-dark dropdown-toggle border border-wh"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Genres
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Horror</a></li>
+              <li><a class="dropdown-item" href="#">Thriller</a></li>
+              <li><a class="dropdown-item" href="#">Comedy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="btn-group" role="group" aria-label="Basic outlined example">
+          <button type="button" class="btn border border-white">
+            <i class="bi bi-justify-left text-white"></i>
+          </button>
+          <button type="button" class="btn border border-whitek">
+            <i class="bi bi-grid-fill text-white"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="container-fluid my-5 mb-2">
+        <h3 class="text-white h5 my-3">Trending Now</h3>
+        <div id="carousel1" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3">
+                <div class="col">
+                  <img
+                    src="./assets/media/media0.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col">
+                  <img
+                    src="./assets/media/media1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-md-block">
+                  <img
+                    src="./assets/media/media2.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-md-block">
+                  <img
+                    src="./assets/media/media3.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/media/media4.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/media/media5.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media6.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media7.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media8.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/assets/media/media9.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/assets/media/media10.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/assets/media/media11.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3">
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media17.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-md-none">
+                  <img
+                    src="./assets/media/media2.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-md-none">
+                  <img
+                    src="./assets//media/media3.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-md-block d-lg-none">
+                  <img
+                    src="./assets/media/media4.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-md-block d-lg-none">
+                  <img
+                    src="./assets/media/media5.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-md-block">
+                  <img
+                    src="./assets/media/media6.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-md-block">
+                  <img
+                    src="./assets/media/media7.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/media/media8.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/media/media9.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/media/media10.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/media/media11.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3">
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media0.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media20.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media2.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media3.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-md-none">
+                  <img
+                    src="./assets/assets/media/media4.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-md-none">
+                  <img
+                    src="./assets/assets/media/media5.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/assets/media/media6.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/assets/media/media7.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-md-block d-lg-none">
+                  <img
+                    src="./assets/assets/media/media8.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-md-block d-lg-none">
+                  <img
+                    src="./assets/assets/media/media9.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-md-block d-lg-none">
+                  <img
+                    src="./assets/assets/media/media10.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-md-block d-lg-none">
+                  <img
+                    src="./assets/assets/media/media11.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/assets/media/media12.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/assets/media/media13.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/assets/media/media14.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/assets/media/media15.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/assets/media/media16.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/assets/media/media17.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel1"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel1"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section class="container-fluid mb-2">
+        <h3 class="text-white h5 my-3">Watch it Again</h3>
+        <div id="carousel2" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3">
+                <div class="col">
+                  <img
+                    src="./assets/media/media10.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col">
+                  <img src="./asset" class="d-block w-100" alt="..." />
+                </div>
+                <div class="col d-none d-md-block">
+                  <img
+                    src="./assets/media/media28.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-md-block">
+                  <img
+                    src="./assets/media/media23.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/assets/media/media24.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/media/media25.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media26.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media27.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media28.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media29.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media30.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media31.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3">
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media0.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-md-none">
+                  <img
+                    src="./assets/media/media2.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-md-none">
+                  <img
+                    src="./assets/media/media3.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-md-block d-lg-none">
+                  <img
+                    src="./assets/media/media4.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-md-block d-lg-none">
+                  <img
+                    src="./assets/media/media5.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-md-block">
+                  <img
+                    src="./assets/media/media6.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-md-block">
+                  <img
+                    src="./assets/media/media7.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/media/media8.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/media/media9.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/media/media10.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/media/media11.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3">
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media0.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media2.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media3.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-md-none">
+                  <img
+                    src="./assets/media/media4.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-md-none">
+                  <img
+                    src="./assets/media/media5.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media6.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media7.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-md-block d-lg-none">
+                  <img
+                    src="./assets/media/media8.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-md-block d-lg-none">
+                  <img
+                    src="./assets/media/media9.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-md-block d-lg-none">
+                  <img
+                    src="./assets/media/media10.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-md-block d-lg-none">
+                  <img
+                    src="./assets/media/media11.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/media/media12.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/media/media13.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/media/media14.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/media/media15.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/media/media16.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/media/media17.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel2"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel2"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section class="container-fluid mb-5">
+        <h3 class="text-white h5 my-3">Trending Now</h3>
+        <div id="carousel3" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3">
+                <div class="col">
+                  <img
+                    src="./assets/media/media32.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col">
+                  <img
+                    src="./assets/media/media30.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-md-block">
+                  <img
+                    src="./assets/media/media31.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-md-block">
+                  <img
+                    src="./assets/media/media28.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/media/media29.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/media/media27.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media25.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media23.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media24.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media22.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media21.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media20.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3">
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media32.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media30.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-md-none">
+                  <img
+                    src="./assets/media/media31.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-md-none">
+                  <img
+                    src="./assets/media/media29.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-md-block d-lg-none">
+                  <img
+                    src="./assets/media/media27.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-md-block d-lg-none">
+                  <img
+                    src="./assets/media/media28.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-md-block">
+                  <img
+                    src="./assets/media/media25.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-md-block">
+                  <img
+                    src="./assets/media/media26.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/media/media24.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/media/media22.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/media/media23.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/media/media21.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3">
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media20.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media2.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media3.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-md-none">
+                  <img
+                    src="./assets/media/media4.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-md-none">
+                  <img
+                    src="./assets/media/media5.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media6.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none">
+                  <img
+                    src="./assets/media/media7.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-md-block d-lg-none">
+                  <img
+                    src="./assets/media/media8.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-md-block d-lg-none">
+                  <img
+                    src="./assets/media/media9.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-md-block d-lg-none">
+                  <img
+                    src="./assets/media/media10.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-md-block d-lg-none">
+                  <img
+                    src="./assets/media/media11.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/media/media6.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/media/media7.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/media/media8.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/media/media9.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/media/media10.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col d-none d-lg-block">
+                  <img
+                    src="./assets/media/media11.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel3"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel3"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-secondary fs-6">
+      <div class="container-fluid d-flex justify-content-center">
+        <div class="row">
+          <div class="col-12">
+            <div id="social-icon" class="my-3 fs-3">
+              <i class="bi bi-facebook text-secondary me-2"></i>
+              <i class="bi bi-instagram text-secondary me-2"></i>
+              <i class="bi bi-twitter text-secondary me-2"></i>
+              <i class="bi bi-youtube text-secondary me-2"></i>
+            </div>
+            <div id="link" class="d-flex gap-3 gap-md-5 mb-3">
+              <div
+                class="d-flex flex-column justify-content-center justify-content-md-start gap2 gap-md-0"
+              >
+                <span>Audio and Subtitles</span>
+                <span>Media Center</span>
+                <span>Privacy</span>
+                <span>Contact Us</span>
+              </div>
+              <div
+                class="d-flex flex-column justify-content-center justify-content-md-start gap2 gap-md-0"
+              >
+                <span>audio Description</span>
+                <span>Investor Relations</span>
+                <span>Lagal Notice</span>
+                <span class="visually-hidden">testo nascosto</span>
+              </div>
+              <div
+                class="d-flex flex-column justify-content-center justify-content-md-start gap2 gap-md-0"
+              >
+                <span>Help Center</span>
+                <span>Jobs</span>
+                <span>Cookies Preferences</span>
+                <span class="visually-hidden">testo nascosto</span>
+              </div>
+              <div
+                class="d-flex flex-column justify-content-center justify-content-md-start gap2 gap-md-0"
+              >
+                <span>Gift Card</span>
+                <span>Temes of use</span>
+                <span>corporate Information</span>
+                <span class="visually-hidden">testo nascosto</span>
+              </div>
+            </div>
+            <div id="button" class="mb-3">
+              <button type="button" class="btn btn-outline-secondary">
+                Service Code
+              </button>
+            </div>
+            <div id="copyright" class="mb-3">
+              <p>&copy; 1997-2019 Netflix, inc.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
